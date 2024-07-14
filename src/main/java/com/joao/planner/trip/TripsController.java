@@ -13,6 +13,6 @@ public class TripsController {
     public ResponseEntity<String> createTrips(@RequestBody TripRequestPayload payload){
         Trip newTrip = new Trip(payload);
         this.tripRepository.save(newTrip);
-
+        return null;
     }
 }
